@@ -1,0 +1,1 @@
+export { default as BackIcon } from '../../assests/svgs/back-icon-svg.svg';
