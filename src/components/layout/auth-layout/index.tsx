@@ -2,8 +2,8 @@ import { Box, Flex, Text } from "native-base"
 import { IAuthLayout } from './types';
 import { FC } from "react";
 import { Pressable } from "react-native";
-import { BackIcon } from "../../../constants/images";
 import { useNavigation } from "@react-navigation/native";
+import { Svgs } from "../../../constants";
 
 const AuthLayout: FC<IAuthLayout> = (props: IAuthLayout) => {
   const { footer, children } = props;
@@ -15,7 +15,7 @@ const AuthLayout: FC<IAuthLayout> = (props: IAuthLayout) => {
 
   return <Box safeAreaY safeAreaX height={'100%'} width={'100%'}>
     <Pressable onPress={onBack}>
-      <BackIcon/>
+      <Svgs.BackIcon/>
     </Pressable>
     <Flex flex={1}>
       {children}

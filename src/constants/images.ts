@@ -1,1 +1,1 @@
-export { default as BackIcon } from '../../assests/svgs/back-icon-svg.svg';
+export { default as splash_img } from '../../assests/imgs/splash-img.jpeg'

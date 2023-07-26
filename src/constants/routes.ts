@@ -4,6 +4,7 @@ const route = {
 
 const screens = {
   Welcome: 'Welcome', 
+  Login: 'Login', 
 }
 
 export { route, screens };
