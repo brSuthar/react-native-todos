@@ -1,8 +1,14 @@
 import {ArrowForwardIcon, Box, IconButton, Image, StatusBar} from 'native-base';
 import React from 'react';
-import {images} from '../../../constants';
+import {images, screens} from '../../../constants';
 
-const Welcome = () => {
+const Welcome = (props: any) => {
+  const {navigation} = props;
+
+  const onNavigate = () => {
+    navigation.navigate(screens.Login);
+  };
+
   return (
     <Box height="100%" width="100%">
       <StatusBar barStyle={'light-content'} />
@@ -25,6 +31,7 @@ const Welcome = () => {
           variant={'solid'}
           height={50}
           width={50}
+          onPress={onNavigate}
           mb={6}>
           <ArrowForwardIcon size={5} color={'white'} />
         </IconButton>

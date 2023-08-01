@@ -1,10 +1,11 @@
 import {Box, StatusBar} from 'native-base';
 import React from 'react';
+import AuthLayout from '../../../components/layout/auth-layout';
 
 const Login = () => {
   return (
     <Box height="100%" width="100%">
-      <StatusBar barStyle={'light-content'} />
+      <AuthLayout />
     </Box>
   );
 };
